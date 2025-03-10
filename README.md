@@ -20,7 +20,7 @@
 
 ## Video Demo
 
-[Insert Video Demo Link Here]
+https://github.com/user-attachments/assets/671a7b3f-f215-412b-8e70-ae50790a56b7
 
 ### Features
 
