@@ -75,7 +75,7 @@ class Snake(tk.Canvas):
                         highlightthickness=0, highlightbackground="black")
         
         self.snake_positions = [(100, 100), (80, 100), (60, 100)]
-        self.food_position = self.set_new_food_position()  # 🚨 This was causing an error
+        self.food_position = self.set_new_food_position()  # This was causing an error
         self.direction = "Right"
         self.score = 0
 
@@ -88,7 +88,7 @@ class Snake(tk.Canvas):
         self.game_loop_id = None
         self.start_game_loop()
 
-    def set_new_food_position(self):  # 🚀 Moved inside the class
+    def set_new_food_position(self): 
         while True:
             x_position = randint(1, 29) * MOVE_INCREMENT
             y_position = randint(3, 30) * MOVE_INCREMENT
@@ -110,7 +110,7 @@ class Snake(tk.Canvas):
             self.food = ImageTk.PhotoImage(self.food_image)
 
             
-            # 🔊 Load movement sound effect
+            # Load movement sound effect
             self.move_sound = pygame.mixer.Sound(r"C:\Users\Evgen\OneDrive\Desktop\MySnakeGame\assets\Audio\gameboy-pluck-button.MP3")
         
         except IOError as error:
@@ -249,7 +249,7 @@ def create_start_menu():
                             font=jacquard_font_medium, fg="white", bg="black", selectcolor="grey")
         rb.pack(pady=5)
 
-    # Move the Start button **outside** the loop so it only appears once
+    
     start_button = tk.Button(start_frame, text="Start Game", font=jacquard_font_medium,
                             command=lambda: start_game(int(difficulty_var.get())))
     start_button.pack(pady=20)
@@ -268,7 +268,7 @@ def back_to_menu(event=None):
     if board:
         board.destroy()
         board = None
-    play_intro_audio()  # 🔊 Restart the intro music
+    play_intro_audio()  # Restart the intro music
     create_start_menu()
 
 
