@@ -1,6 +1,6 @@
-# MySnakeGame 🐍
+# My Snake Game App 🐍
 
-**MySnakeGame** is a modern recreation of the classic Snake game using Python's Tkinter for the graphical interface and Pygame for audio. The game features smooth snake movement, difficulty selection, and an engaging user experience.
+**My Snake Game App** is a modern recreation of the classic Snake game using Python's Tkinter for the graphical interface and Pygame for audio. The game features smooth snake movement, difficulty selection, and an engaging user experience.
 
 ## Table of Contents
 
